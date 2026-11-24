@@ -14,15 +14,13 @@
 | Language | TypeScript 5.8 |
 | Styling | Tailwind CSS v4 |
 | UI Primitives | Radix UI |
-| AI Chat | Groq API (streaming) |
 | Email | Resend |
 | Deployment | Vercel |
 
 ## Features
 
-- **AI Chat Widget** — streaming chat powered by Groq, context-aware about my profile and projects
 - **Bilingual** — full Indonesian / English toggle
-- **Contact Form** — with AI-assisted email formatting via Groq
+- **Contact Form** — email delivery via Resend
 - **Blog** — pulls posts from Medium RSS feed
 - **GitHub Contributions** — live contribution graph
 - **Sound System** — subtle audio feedback on interactions
@@ -43,7 +41,6 @@ pnpm dev
 
 | Variable | Required | Description |
 |---|---|---|
-| `GROQ_API_KEY` | ✅ | [groq.com](https://console.groq.com) — free tier available |
 | `RESEND_API_KEY` | ✅ | [resend.com](https://resend.com) — free tier available |
 | `APP_URL` | optional | Production URL for SEO/OG metadata |
 

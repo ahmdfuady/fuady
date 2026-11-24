@@ -1,4 +1,3 @@
-import { ChatWidget } from "@/components/chat-widget"
 import { PixelBlast } from "@/components/pixel-blast"
 import { SiteFooter } from "@/components/site-footer"
 import { PortfolioNavbar } from "@/features/portfolio/components/portfolio-navbar"
@@ -9,9 +8,6 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   const repoStats = await getGitHubRepoStats()
 
   return (
-    // No padding reacts to the chat opening, on purpose: the panel occupies the
-    // gutter beside the centred column rather than displacing it, so opening the
-    // chat never moves a single thing on the page.
     <div className="group/layout relative">
       <PixelBlast />
       {/* Invisible until tabbed to. Without it, reaching the content by keyboard
@@ -33,8 +29,6 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         </div>
       </main>
       <SiteFooter />
-
-      <ChatWidget />
     </div>
   )
 }

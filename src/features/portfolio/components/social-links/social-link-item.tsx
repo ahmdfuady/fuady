@@ -2,8 +2,6 @@
 
 import { ArrowUpRightIcon } from "lucide-react"
 
-import { useChat } from "@/components/chat-provider"
-import { preloadChatPanel } from "@/components/chat-widget"
 import { Magnetic } from "@/components/core/magnetic"
 import { UTM_PARAMS } from "@/config/site"
 import type { SocialLink } from "@/features/portfolio/types/social-links"
@@ -18,26 +16,6 @@ export function SocialLinkItem({
   className,
 }: SocialLink & { index?: number; className?: string }) {
   const isExternal = href.startsWith("http")
-  const isMailto = href.startsWith("mailto:")
-  const { setIsChatOpen } = useChat()
-
-  const handleMouseEnter = () => {
-    if (isMailto) {
-      preloadChatPanel()
-    }
-  }
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (isMailto) {
-      e.preventDefault()
-      setIsChatOpen(true)
-      setTimeout(
-        () => window.dispatchEvent(new CustomEvent("startEmailFlow")),
-        100
-      )
-    }
-  }
-
   // Desktop (3 columns: 0,1,2 / 3,4,5)
   const isDesktopRow1 = index < 3
   const isDesktopRow2 = index >= 3
@@ -75,9 +53,6 @@ export function SocialLinkItem({
       href={isExternal ? addQueryParams(href, UTM_PARAMS) : href}
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
-      onClick={handleClick}
-      onPointerEnter={handleMouseEnter}
-      onFocus={handleMouseEnter}
     >
       <Magnetic intensity={0.25}>
         <span
