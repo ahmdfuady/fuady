@@ -1,56 +1,57 @@
 import type { User } from "@/features/portfolio/types/user"
 
 export const USER: User = {
-  firstName: "Firdaus",
-  lastName: "Khotibul Zickrian",
-  displayName: "Firdaus Khotibul Zickrian",
-  username: "zickrian",
+  firstName: "Ahmad",
+  lastName: "Fuady",
+  displayName: "Ahmad Fuady",
+  username: "fuady",
   gender: "male",
   pronouns: "he/him",
 
-  bio: "I'm Firdaus Khotibul Zickrian, an AI Engineer based in Indonesia building practical machine learning systems, data workflows, and modern full-stack web applications that turn ideas into impactful products.",
+  bio: "I'm a Computer Science student focused on front-end development and ERP solutions, with hands-on experience in configuration, data imports, and technical documentation.",
   bioId:
-    "Saya Firdaus Khotibul Zickrian, seorang AI Engineer yang berbasis di Indonesia, membangun sistem machine learning yang praktis, alur kerja data, dan aplikasi web full-stack modern yang mengubah ide menjadi produk yang berdampak.",
+    "Saya mahasiswa Ilmu Komputer yang berfokus pada pengembangan front-end dan solusi ERP, dengan pengalaman dalam konfigurasi, impor data, dan dokumentasi teknis.",
 
   flipSentences: [
-    "AI / ML Engineer",
-    "AI & Data Scientist",
+    "Front-End Developer",
+    "ERP Analyst",
+    "Web Application Developer",
+    "Computer Science Student",
     "Full Stack Developer",
-    "Data Analyst",
   ],
   flipSentencesId: [
-    "AI / ML Engineer",
-    "AI & Data Scientist",
+    "Pengembang Front-End",
+    "analyst ERP",
+    "Pengembang Aplikasi Web",
+    "Mahasiswa Ilmu Komputer",
     "Pengembang Full Stack",
-    "Analis Data",
   ],
 
   address: "Indonesia",
-  email: "ZmlyZGF1c2tob3RpYnVsemlja3JpYW5AZ21haWwuY29t", // base64 of firdauskhotibulzickrian@gmail.com
-  phone: "+62 851-5548-7647",
-  website: "https://www.zickrian.dev",
+  email: "ZnVhZHlhaG1hZDY5QGdtYWlsLmNvbQ==", // base64 of fuadyahmad69@gmail.com
+  phone: "+62 895-6351-37292",
+  website: "https://ahmadfuady.vercel.app",
 
-  jobTitle: "AI & Machine Learning Engineer",
-  seoTitle: "Firdaus Khotibul Zickrian | AI & Machine Learning Engineer",
+  jobTitle: "Software Engineer & ERP Analyst",
+  seoTitle: "Ahmad Fuady | Front-End Developer & ERP Analyst",
   seoDescription:
-    "I'm Firdaus Khotibul Zickrian, an AI and machine learning engineer from Indonesia. I build practical software, data products, and machine learning systems.",
+    "I'm Ahmad Fuady, a Software Engineer and ERP Analyst from Indonesia. I build practical software, data products, and machine learning systems.",
 
   jobs: [
     {
-      title: "AI Engineer Intern",
-      company: "PT Custompedia Creative Group",
-      website: "https://www.instagram.com/custompedia/",
-      experienceId: "custompedia",
+      title: "Functional ERP",
+      company: "PT Ctech erp Indonesia",
+      website: " ",
+      experienceId: "Pengalaman Kerja",
     },
   ],
 
-  about: `I'm an AI Engineer based in Indonesia, specializing in building practical machine learning systems, data workflows, and modern full-stack web applications. I focus on developing reliable, end-to-end solutions that turn complex ideas into intuitive products designed for real-world impact.`,
-  aboutId: `Saya seorang AI Engineer yang berbasis di Indonesia, dengan spesialisasi dalam membangun sistem machine learning yang praktis, alur kerja data, dan aplikasi web full-stack modern. Saya fokus mengembangkan solusi end-to-end yang andal, yang mengubah ide-ide kompleks menjadi produk intuitif yang dirancang untuk memberikan dampak nyata.`,
+  about: `I'm a Computer Science student focused on front-end development and ERP solutions. I work with configuration, data imports, and technical documentation.`,
+  aboutId: `Saya mahasiswa Ilmu Komputer yang berfokus pada pengembangan front-end dan solusi ERP. Saya berpengalaman dalam konfigurasi, impor data, dan dokumentasi teknis.`,
 
-  avatar: "/image/profile.webp",
+  avatar: "/image/profile.png",
   ogImage: "/image/og.png",
   sameAs: [
-    "https://www.zickrian.dev",
     "https://github.com/zickrian",
     "https://linkedin.com/in/firdauskhotibulzickrian/",
     "https://medium.com/@zickriann",

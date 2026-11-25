@@ -1,7 +1,7 @@
 import { USER } from "@/features/portfolio/data/user"
 import type { NavItem } from "@/types/nav"
 
-const DEFAULT_SITE_URL = "https://www.zickrian.dev"
+const DEFAULT_SITE_URL = "https://ahmadfuady.vercel.app"
 
 function normalizeSiteUrl(value?: string) {
   if (!value) return DEFAULT_SITE_URL
@@ -38,9 +38,9 @@ export const MAIN_NAV: NavItem[] = [
   },
 ]
 
-export const X_HANDLE = "@zickrian"
-export const GITHUB_USERNAME = "zickrian"
-export const GITHUB_REPO = "zickrian/zickriann"
+export const X_HANDLE = " "
+export const GITHUB_USERNAME = "ahmdfuady"
+export const GITHUB_REPO = "ahmdfuady/fuady"
 export const GITHUB_REPO_URL = `https://github.com/${GITHUB_REPO}`
 export const UTM_PARAMS = {
   utm_source: "zickrian",

@@ -41,8 +41,9 @@ export function ProfileHeader({
               alt={`Portrait of ${USER.displayName}`}
               fill
               priority
-              sizes="(min-width: 640px) 128px, 104px"
-              className="size-full object-cover object-[center_28%]"
+              quality={95}
+              sizes="(min-width: 640px) 300px, 250px"
+              className="size-full scale-150 object-cover object-[center_-40%]"
             />
           </div>
 
@@ -77,8 +78,8 @@ export function ProfileHeader({
                 <Image
                   src="/logos/custompedia-logo.webp"
                   alt="Custompedia"
-                  width={22}
-                  height={22}
+                  width={25}
+                  height={25}
                   quality={85}
                   className="size-full object-contain"
                 />
@@ -103,15 +104,6 @@ export function ProfileHeader({
             <MapPin className="size-4" aria-hidden />
             {USER.address}
           </span>
-          <a
-            href={USER.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
-          >
-            <Globe2 className="size-4" aria-hidden />
-            zickrian.dev
-          </a>
         </div>
 
         <div className="mt-5 border-t border-line pt-4">
