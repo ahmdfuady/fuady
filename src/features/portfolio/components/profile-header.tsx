@@ -64,26 +64,6 @@ export function ProfileHeader({
                 aria-label="Verified profile"
                 role="img"
               />
-              <a
-                href="https://www.instagram.com/custompedia/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="PT Custompedia Creative Group"
-                aria-label="PT Custompedia Creative Group"
-                className="relative inline-flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-[4px] border border-[#cfd9de] bg-white p-[2px] shadow-2xs transition-transform hover:scale-105 dark:border-[#536471] sm:size-[22px] sm:rounded-[4.5px]"
-              >
-                {/* Same quality as the experience list renders it at, so both
-                    resolve to one optimised variant instead of fetching the
-                    identical 32px logo twice per page load. */}
-                <Image
-                  src="/logos/custompedia-logo.webp"
-                  alt="Custompedia"
-                  width={25}
-                  height={25}
-                  quality={85}
-                  className="size-full object-contain"
-                />
-              </a>
             </div>
           </div>
           <p className="mt-0.5 text-[15px] leading-5 text-muted-foreground">

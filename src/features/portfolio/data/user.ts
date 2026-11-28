@@ -52,11 +52,8 @@ export const USER: User = {
   avatar: "/image/profile.png",
   ogImage: "/image/og.png",
   sameAs: [
-    "https://github.com/zickrian",
-    "https://linkedin.com/in/firdauskhotibulzickrian/",
-    "https://medium.com/@zickriann",
-    "https://huggingface.co/zickrian",
-    "https://www.pinterest.com/espejodaniel50/",
+    "https://github.com/ahmdfuady",
+    "https://www.linkedin.com/in/ahmad-fuady-0710552b8/",
   ],
   timeZone: "Asia/Jakarta",
 
