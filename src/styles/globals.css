@@ -721,23 +721,38 @@
    the RSC payload. These declarations are what those variants compiled to. */
 @utility contribution-level {
   &[data-level="0"] {
-    fill: color-mix(in oklab, var(--muted-foreground) 5%, transparent);
+    fill: #ebedf0;
+    @variant dark {
+      fill: #161b22;
+    }
   }
 
   &[data-level="1"] {
-    fill: color-mix(in oklab, var(--muted-foreground) 20%, transparent);
+    fill: #9be9a8;
+    @variant dark {
+      fill: #0e4429;
+    }
   }
 
   &[data-level="2"] {
-    fill: color-mix(in oklab, var(--muted-foreground) 40%, transparent);
+    fill: #40c463;
+    @variant dark {
+      fill: #006d32;
+    }
   }
 
   &[data-level="3"] {
-    fill: color-mix(in oklab, var(--muted-foreground) 60%, transparent);
+    fill: #30a14e;
+    @variant dark {
+      fill: #26a641;
+    }
   }
 
   &[data-level="4"] {
-    fill: color-mix(in oklab, var(--muted-foreground) 80%, transparent);
+    fill: #216e39;
+    @variant dark {
+      fill: #39d353;
+    }
   }
 }
 

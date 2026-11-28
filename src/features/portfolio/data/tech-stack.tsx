@@ -1,122 +1,8 @@
 import type { TechStack } from "../types/tech-stack"
 
-// Icon SVG paths sourced from https://simpleicons.org
+// Icon SVG paths sourced from https://simpleicons.org (via /icons/tech-stack-v1.svg)
 export const TECH_STACK: TechStack[] = [
-  // AI / ML
-  {
-    key: "python",
-    title: "Python",
-    href: "https://www.python.org/",
-    iconId: "python",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "tensorflow",
-    title: "TensorFlow",
-    href: "https://www.tensorflow.org/",
-    iconId: "tensorflow",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "pytorch",
-    title: "PyTorch",
-    href: "https://pytorch.org/",
-    iconId: "pytorch",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "keras",
-    title: "Keras",
-    href: "https://keras.io/",
-    iconId: "keras",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "scikitlearn",
-    title: "Scikit-Learn",
-    href: "https://scikit-learn.org/",
-    iconId: "scikitlearn",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "opencv",
-    title: "OpenCV",
-    href: "https://opencv.org/",
-    iconId: "opencv",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "pandas",
-    title: "Pandas",
-    href: "https://pandas.pydata.org/",
-    iconId: "pandas",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "numpy",
-    title: "NumPy",
-    href: "https://numpy.org/",
-    iconId: "numpy",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "plotly",
-    title: "Matplotlib",
-    href: "https://matplotlib.org/",
-    iconId: "plotly",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "mlflow",
-    title: "MLflow",
-    href: "https://mlflow.org/",
-    iconId: "mlflow",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "streamlit",
-    title: "Streamlit",
-    href: "https://streamlit.io/",
-    iconId: "streamlit",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "huggingface",
-    title: "Hugging Face",
-    href: "https://huggingface.co/",
-    iconId: "huggingface",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "langchain",
-    title: "LangChain",
-    href: "https://www.langchain.com/",
-    iconId: "langchain",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "claude",
-    title: "Claude",
-    href: "https://claude.ai/",
-    iconId: "claude",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "chatgpt",
-    title: "ChatGPT",
-    href: "https://chatgpt.com/",
-    iconId: "chatgpt",
-    categories: ["AI / ML"],
-  },
-  {
-    key: "gemini",
-    title: "Gemini",
-    href: "https://gemini.google.com/",
-    iconId: "gemini",
-    categories: ["AI / ML"],
-  },
-
-  // Frontend
+  // Frontend & UI
   {
     key: "js",
     title: "JavaScript",
@@ -153,98 +39,107 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Frontend"],
   },
 
-  // Backend
+  // Backend & Database
+  {
+    key: "python",
+    title: "Python",
+    href: "https://www.python.org/",
+    iconId: "python",
+    categories: ["Backend & Data"],
+  },
   {
     key: "nodejs",
     title: "Node.js",
     href: "https://nodejs.org/",
     iconId: "nodejs",
-    categories: ["Backend"],
+    categories: ["Backend & Data"],
   },
   {
-    key: "bun",
-    title: "Bun",
-    href: "https://bun.sh/",
-    iconId: "bun",
-    categories: ["Backend"],
+    key: "postgresql",
+    title: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    iconId: "postgresql",
+    categories: ["Backend & Data"],
   },
   {
     key: "mysql",
     title: "SQL",
     href: "https://www.iso.org/standard/76583.html",
     iconId: "mysql",
-    categories: ["Backend"],
+    categories: ["Backend & Data"],
   },
   {
     key: "cplusplus",
     title: "C++",
     href: "https://isocpp.org/",
     iconId: "cplusplus",
-    categories: ["Backend"],
-  },
-  {
-    key: "fastapi",
-    title: "FastAPI",
-    href: "https://fastapi.tiangolo.com/",
-    iconId: "fastapi",
-    categories: ["Backend"],
-  },
-  {
-    key: "postgresql",
-    title: "PostgreSQL",
-    href: "https://www.postgresql.org",
-    iconId: "postgresql",
-    categories: ["Backend"],
+    categories: ["Backend & Data"],
   },
 
-  // DevOps / Cloud
+  // Data Science & AI
   {
-    key: "docker",
-    title: "Docker",
-    href: "https://www.docker.com/",
-    iconId: "docker",
-    categories: ["DevOps / Cloud"],
+    key: "pandas",
+    title: "Pandas",
+    href: "https://pandas.pydata.org/",
+    iconId: "pandas",
+    categories: ["Data & AI"],
   },
   {
-    key: "microsoftazure",
-    title: "Microsoft Azure",
-    href: "https://azure.microsoft.com/en-us/",
-    iconId: "microsoftazure",
-    categories: ["DevOps / Cloud"],
+    key: "numpy",
+    title: "NumPy",
+    href: "https://numpy.org/",
+    iconId: "numpy",
+    categories: ["Data & AI"],
   },
+  {
+    key: "scikitlearn",
+    title: "Scikit-Learn",
+    href: "https://scikit-learn.org/",
+    iconId: "scikitlearn",
+    categories: ["Data & AI"],
+  },
+  {
+    key: "gemini",
+    title: "Gemini",
+    href: "https://gemini.google.com/",
+    iconId: "gemini",
+    categories: ["Data & AI"],
+  },
+  {
+    key: "claude",
+    title: "Claude",
+    href: "https://claude.ai/",
+    iconId: "claude",
+    categories: ["Data & AI"],
+  },
+  {
+    key: "chatgpt",
+    title: "ChatGPT",
+    href: "https://chatgpt.com/",
+    iconId: "chatgpt",
+    categories: ["Data & AI"],
+  },
+
+  // Tools
   {
     key: "github",
     title: "GitHub",
     href: "https://github.com/",
     iconId: "github",
-    categories: ["DevOps / Cloud"],
-  },
-  {
-    key: "prometheus",
-    title: "Prometheus",
-    href: "https://prometheus.io/",
-    iconId: "prometheus",
-    categories: ["DevOps / Cloud"],
-  },
-  {
-    key: "grafana",
-    title: "Grafana",
-    href: "https://grafana.com/",
-    iconId: "grafana",
-    categories: ["DevOps / Cloud"],
+    categories: ["Tools"],
   },
   {
     key: "vscode",
     title: "Visual Studio Code",
     href: "https://code.visualstudio.com/",
     iconId: "vscode",
-    categories: ["DevOps / Cloud"],
+    categories: ["Tools"],
   },
 ]
 
 export const STACK_CATEGORIES = [
-  "AI / ML",
   "Frontend",
-  "Backend",
-  "DevOps / Cloud",
+  "Backend & Data",
+  "Data & AI",
+  "Tools",
 ]
